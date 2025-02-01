@@ -607,7 +607,7 @@ body {
     }
     .container .menu a {
         font-size: 15px;
-        padding: 0 14px;
+        padding: 0 15px;
     }
 
 
@@ -621,7 +621,7 @@ body {
         display: none; /* Ocultar menú horizontal en pantallas más pequeñas */
     }
     .header {
-        padding: 120px 15px 20px;
+        padding: 70px 15px 20px;
     }
     .header h1 {
         font-size: 2.2em;
@@ -645,6 +645,9 @@ body {
     }
     .final-section {
         flex-direction: column;
+    }
+    .image-row img {
+        max-height: 520px;
     }
     .final-section .image-container {
         max-width: 80%;
@@ -662,13 +665,13 @@ body {
         display: none; /* Ocultar menú horizontal en pantallas más pequeñas */
     }
     .header {
-        padding: 120px 15px 20px;
+        padding: 70px 15px 20px;
     }
     .header h1 {
         font-size: 2.2em;
     }
     .header p {
-        font-size: 1em;
+        font-size: 1.4em;
     }
     .introduccion h2 {
         font-size: 2em;
@@ -684,6 +687,9 @@ body {
     .image-row .image-container {
         max-width: 100%;
     }
+    .image-row img {
+        max-height: 400px;
+    }
     .final-section {
         flex-direction: column;
     }
@@ -696,18 +702,23 @@ body {
         margin-top: 20px;
         text-align: center;
     }
+    .reference-button {
+        padding: 8px 40px;
+    }
 }
 
 @media (max-width: 768px) {
     .header-nav {
-        height: auto;
         padding: 100;
+    }
+    .header {
+        padding: 65px 15px 20px;
     }
     .header h1 {
         font-size: 1.8em;
     }
     .header p {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .container .menu a {
         font-size: 12px;
@@ -719,16 +730,22 @@ body {
     .cta a {
         font-size: 1em;
     }
+    .cta h2 {
+        margin-bottom: 5px;
+    }
     .reference-button {
         font-size: 0.9em;
-        padding: 10px 15px;
+        padding: 7px 15px;
+    }
+    .reference-image-container {
+        position: relative;
     }
 }
 
 @media (max-width: 576px) {
     .header {
         text-align: center;
-        padding: 120px 10px 20px;
+        padding: 65px 10px 20px;
     }
     .header h1 {
         font-size: 1.5em;
@@ -744,13 +761,13 @@ body {
         max-width: 100%;
     }
     .image-row img {
-        max-height: 200px;
+        max-height: 260px;
     }
     .final-section {
         flex-direction: column;
     }
     .final-section .image-container {
-        max-width: 100%;
+        max-width: 95%;
     }
     .final-section .text-container {
         margin-top: 10px;
@@ -759,9 +776,16 @@ body {
         padding: 10px 20px;
         font-size: 0.8em;
     }
+    .cta h2 {
+        margin-bottom: 5px;
+        font-size: 2em;
+    }
     .reference-button {
         font-size: 0.8em;
-        padding: 8px 12px;
+        padding: 6px 35px;
+    }
+    .reference-image-container {
+        position: relative;
     }
 }
 
@@ -821,7 +845,7 @@ img {
 /* Ajuste de márgenes e imágenes en pantallas muy pequeñas */
 @media (max-width: 480px) {
     .image-row img {
-        max-height: 180px;
+        max-height: 200px;
     }
     .header h1 {
         font-size: 1.4em;
