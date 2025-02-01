@@ -324,14 +324,13 @@ body {
     background: #1f1f1f;
 }
 
-.cont-menu label {
+.cont-menu label{
     position: absolute;
     right: 5px;
     top: 10px;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
-    transition: all 300ms ease;
 }
 
 #btn-menu:checked ~ .container-menu .cont-menu label {
