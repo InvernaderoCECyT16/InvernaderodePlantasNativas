@@ -1,0 +1,840 @@
+html {
+    scroll-padding-top: 100px; /* Ajusta el valor al tamaño del encabezado */
+  }
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0000007a;
+    background: rgb(224, 241, 224); /* Fondo actualizado */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.infografia {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 75px 20px 13px 20px; /* Top 75px, Right 20px, Bottom 40px, Left 20px */
+    background-color: #691b37; /* Fondo guinda */
+    color: white;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header2 */
+.header2 {
+    text-align: center;
+    padding: 5px 20px 13px 20px; /* Top 75px, Right 20px, Bottom 40px, Left 20px */
+    background-color: #691b37; /* Fondo guinda */
+    color: white;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+ /* Para Nav */
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo {
+    float: left;
+    line-height: 100px;
+}
+
+.container .btn-menu label {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container .btn-menu:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.h1 {
+    color: #ffffff;
+    font-weight: 550;
+    font-size: 25px;
+    line-height: 100px;
+    float:left;
+}
+
+.container .menu {
+    float: right;
+    line-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 100px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    margin-right: 1px;
+}
+
+.container .menu a:hover {
+    transform: scale(1.2, 1.2);
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 1px;
+}
+
+.header-nav{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #691b37;
+    box-shadow: 0px 5px 10px #8f2b4fb6;;
+    margin: 0;
+    z-index: 10;
+}
+
+
+
+/* Para Nav Cierre*/
+
+
+/* ---------------------------- */
+.referencess-container {
+    display: flex; /* Utiliza Flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacia las imágenes de manera equitativa */
+    gap: 30px; /* Ajusta el espacio entre las imágenes */
+    margin-top: 20px; /* Espacio entre la bibliografía y las imágenes */
+}
+
+.references {
+    display: flex;
+    justify-content: center; /* Centra las imágenes dentro de su contenedor */
+}
+
+.references-image-container {
+    position: relative;
+    max-width: 180px; /* Imagen más pequeña */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.references-image {
+    width: auto; /* Ajusta el tamaño horizontal automáticamente */
+    height: 150px; /* Ajusta la altura de las imágenes (puedes cambiar este valor) */
+    object-fit: contain; /* Mantiene la proporción de la imagen mientras ajusta su tamaño */
+    border-radius: 10px; /* Opcional: Da bordes redondeados a las imágenes */
+}
+
+/* Imagen expandida */
+.references-image-container.active .reference-image {
+    position: fixed;
+    top: 55%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Compensa el tamaño de la imagen, asegurando que se centre */
+    width: 90vw; /* 90% del ancho de la ventana */
+    max-height: 90vh; /* 90% de la altura de la ventana */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    z-index: 20;
+}
+
+/* Contenedor que asegura que la imagen está centrada en toda la pantalla */
+.references-image-container.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Fondo detrás de la imagen */
+}
+/* ---------------------------- */
+.reference1-container {
+    display: flex; /* Utiliza Flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacia las imágenes de manera equitativa */
+    gap: 30px; /* Ajusta el espacio entre las imágenes */
+    margin-top: 20px; /* Espacio entre la bibliografía y las imágenes */
+}
+
+.reference1 {
+    display: flex;
+    justify-content: center; /* Centra las imágenes dentro de su contenedor */
+}
+
+.reference1-image-container {
+    position: relative;
+    max-width: 180px; /* Imagen más pequeña */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.reference1-image {
+    width: auto; /* Ajusta el tamaño horizontal automáticamente */
+    height: 150px; /* Ajusta la altura de las imágenes (puedes cambiar este valor) */
+    object-fit: contain; /* Mantiene la proporción de la imagen mientras ajusta su tamaño */
+    border-radius: 10px; /* Opcional: Da bordes redondeados a las imágenes */
+}
+
+/* Imagen expandida */
+.reference1-image-container.active .reference-image {
+    position: fixed;
+    top: 30%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Compensa el tamaño de la imagen, asegurando que se centre */
+    width: 90vw; /* 90% del ancho de la ventana */
+    max-height: 90vh; /* 90% de la altura de la ventana */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    z-index: 20;
+}
+
+/* Contenedor que asegura que la imagen está centrada en toda la pantalla */
+.reference1-image-container.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Fondo detrás de la imagen */
+}
+/* ---------------------------- */
+.reference-image-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    max-width: 100px; /* Imagen más pequeña */
+    cursor: pointer;
+    z-index: 15;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Imagen expandida */
+.reference-image-container.active .reference-image {
+    position: fixed;
+    top: -85%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Compensa el tamaño de la imagen, asegurando que se centre */
+    width: 90vw; /* 90% del ancho de la ventana */
+    max-height: 90vh; /* 90% de la altura de la ventana */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    z-index: 20;
+}
+
+.reference-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Contenedor que asegura que la imagen está centrada en toda la pantalla */
+.reference-image-container.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Fondo detrás de la imagen */
+}
+/* ---------------------------- */
+
+
+
+/* Menú lateral */
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente oscuro */
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: opacity 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 20;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1f1e1e;
+    position: fixed;
+    top: 0px; /* Ajuste para reducir el margen superior */
+    left: 0;
+    height: 100vh; /* Asegura que el menú ocupe toda la altura de la pantalla */
+    overflow-y: scroll; /* Permite el desplazamiento vertical */
+    -ms-overflow-style: none; /* Para ocultar la barra en navegadores como Edge */
+    scrollbar-width: none; /* Para ocultar la barra en Firefox */
+    z-index: 30;
+    padding-bottom: 50px; /* Añade un margen en la parte inferior */
+
+}
+
+
+.cont-menu::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores basados en WebKit (Chrome, Safari, etc.) */
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(-2%);
+    padding-bottom: 50px; /* Añade un espacio adicional en la parte inferior del contenido */
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 300ms ease;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu label {
+    right: 20px; /* Hace que el botón de cierre se desplace junto con el menú */
+}
+
+/* Fin de Menú lateral */
+
+.menu {
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    background-color: #691b37;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Introducción */
+.introduccion {
+    margin: 60px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+.introduccion h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.introduccion p {
+    font-size: 1.2em;
+    text-align: justify;
+    color: #555;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Image Row */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s ease-out 0.5s forwards;
+}
+
+.image-row .image-container {
+    text-align: center;
+    flex: 1;
+    max-width: 45%;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #535353;
+    text-align: justify;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Call to Action */
+.cta {
+    width: 100%; /* Cambia a un tamaño más pequeño, ajustable según tus necesidades */
+    max-width: 1300px; /* Controla el ancho máximo */
+    margin: 20px auto; /* Centra el contenedor */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 10px 15px; /* Reduce el espacio interno */
+    background: #691b37; /* Color vino */
+    color: white;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s ease-out 1s forwards;
+}
+
+
+
+
+
+.cta p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fafafa;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.cta a:hover {
+    background: #40db62;
+    color:white;
+}
+
+/* Final Section: New text with image */
+.final-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 60px;
+}
+
+.final-section .image-container {
+    flex: 1;
+    text-align: left;
+}
+
+.final-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.final-section .text-container {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.final-section .image-caption {
+    text-align: right;
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Custom Styles for "Ciclo CAM" and Subtitles */
+.final-section h2 {
+    color: black; /* Color del título en negro */
+}
+
+.final-section h2 + p {
+    font-weight: bold; /* Subtítulo en negritas */
+}
+.cta h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+    
+        .reference-button {
+            display: inline-block;
+            padding: 15px 20px;
+            margin: 10px 0;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #691b37;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 90%; /* Asegura que todos los botones tengan el mismo tamaño */
+            max-width: 600px; /* Controla el ancho máximo */
+        }
+    
+        .reference-button:hover {
+            background-color: #39c958;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+    
+        .reference-button:active {
+            transform: scale(1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+    
+        .cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reference-button {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 5px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #691b37;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 90%; /* Asegura que todos los botones tengan el mismo tamaño */
+    max-width: 600px; /* Controla el ancho máximo */
+}
+
+.reference-button:hover {
+    background-color: #40db62;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.reference-button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+/* General Responsive */
+
+    .container, .infografia {
+        width: 95%;
+    }
+    .container .menu a {
+        font-size: 15px;
+        padding: 0 14px;
+    }
+
+
+
+
+@media (max-width: 1205px) {
+}
+
+@media (max-width: 1193.2px) {
+    .container .menu {
+        display: none; /* Ocultar menú horizontal en pantallas más pequeñas */
+    }
+    .header {
+        padding: 120px 15px 20px;
+    }
+    .header h1 {
+        font-size: 2.2em;
+    }
+    .header p {
+        font-size: 1em;
+    }
+    .introduccion h2 {
+        font-size: 2em;
+    }
+    .introduccion p {
+        font-size: 1em;
+        max-width: 90%;
+    }
+    .image-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .image-row .image-container {
+        max-width: 100%;
+    }
+    .final-section {
+        flex-direction: column;
+    }
+    .final-section .image-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .final-section .text-container {
+        padding: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .container .menu {
+        display: none; /* Ocultar menú horizontal en pantallas más pequeñas */
+    }
+    .header {
+        padding: 120px 15px 20px;
+    }
+    .header h1 {
+        font-size: 2.2em;
+    }
+    .header p {
+        font-size: 1em;
+    }
+    .introduccion h2 {
+        font-size: 2em;
+    }
+    .introduccion p {
+        font-size: 1em;
+        max-width: 90%;
+    }
+    .image-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .image-row .image-container {
+        max-width: 100%;
+    }
+    .final-section {
+        flex-direction: column;
+    }
+    .final-section .image-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .final-section .text-container {
+        padding: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        height: auto;
+        padding: 100;
+    }
+    .header h1 {
+        font-size: 1.8em;
+    }
+    .header p {
+        font-size: 0.9em;
+    }
+    .container .menu a {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .cta p {
+        font-size: 1.2em;
+    }
+    .cta a {
+        font-size: 1em;
+    }
+    .reference-button {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        text-align: center;
+        padding: 120px 10px 20px;
+    }
+    .header h1 {
+        font-size: 1.5em;
+    }
+    .header p {
+        font-size: 0.8em;
+    }
+    .introduccion h2 {
+        font-size: 1.5em;
+    }
+    .introduccion p {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+    .image-row img {
+        max-height: 200px;
+    }
+    .final-section {
+        flex-direction: column;
+    }
+    .final-section .image-container {
+        max-width: 100%;
+    }
+    .final-section .text-container {
+        margin-top: 10px;
+    }
+    .cta a {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+    .reference-button {
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+}
+
+/* Asegurando que las imágenes no excedan el contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Menú lateral en móvil */
+#btn-menu {
+    display: block;
+}
+
+.container-menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: opacity 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 20;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #1f1e1e;
+    padding-top: 50px; /* Espacio adicional para el menú */
+    z-index: 30;
+}
+
+.cont-menu nav a {
+    font-size: 1.2em; /* Aumenta el tamaño de los links en móvil */
+}
+
+/* Botón de menú en pantallas pequeñas */
+#btn-menu:checked ~ .container-menu .cont-menu label {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ajuste de márgenes e imágenes en pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .image-row img {
+        max-height: 180px;
+    }
+    .header h1 {
+        font-size: 1.4em;
+    }
+    .header p {
+        font-size: 0.75em;
+    }
+    .cta p {
+        font-size: 1.1em;
+    }
+}
