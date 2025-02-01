@@ -333,10 +333,6 @@ body {
     font-size: 18px;
 }
 
-#btn-menu:checked ~ .container-menu .cont-menu label {
-    right: 20px; /* Hace que el botón de cierre se desplace junto con el menú */
-}
-
 /* Fin de Menú lateral */
 
 .menu {
