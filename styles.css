@@ -427,7 +427,6 @@ body {
 
 /* Call to Action */
 .cta {
-    width: 100%; /* Cambia a un tamaño más pequeño, ajustable según tus necesidades */
     max-width: 1300px; /* Controla el ancho máximo */
     margin: 20px auto; /* Centra el contenedor */
     text-align: center; /* Alinea el texto al centro */
@@ -438,6 +437,7 @@ body {
     opacity: 0;
     transform: translateY(50px);
     animation: slideUp 1.5s ease-out 1s forwards;
+    box-sizing: border-box;
 }
 
 
@@ -567,20 +567,22 @@ body {
 }
 
 .reference-button {
-    display: inline-block;
-    padding: 5px 20px;
-    margin: 5px 0;
-    font-size: 1em;
-    font-weight: bold;
-    color: #fff;
-    background-color: #691b37;
-    border: none;
-    border-radius: 5px;
+    width: 100%; /* Hace los botones más anchos pero con margen */
+    max-width: 600px; /* Evita que se estiren demasiado en pantallas grandes */
     text-align: center;
+    padding: 15px;
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: block;
+    margin: 10px auto; /* Centra los botones */
+    color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    width: 90%; /* Asegura que todos los botones tengan el mismo tamaño */
-    max-width: 600px; /* Controla el ancho máximo */
+    transition: background 0.3s;
 }
 
 .reference-button:hover {
