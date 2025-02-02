@@ -1,6 +1,10 @@
 html {
     scroll-padding-top: 100px; /* Ajusta el valor al tamaño del encabezado */
   }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     margin: 0;
@@ -15,7 +19,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 5px 5px 5px;
 }
 
 /* Header */
@@ -84,6 +88,8 @@ body {
     border-bottom: 2px solid transparent;
     font-size: 16px;
     margin-right: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container .menu a:hover {
@@ -606,8 +612,8 @@ body {
         width: 95%;
     }
     .container .menu a {
-        font-size: 14.80px;
-        padding: 0 13px;
+        font-size: 15px;
+        padding: 0 15px;
     }
 
 
@@ -724,6 +730,7 @@ body {
         font-size: 12px;
         padding: 0 10px;
     }
+    
     .cta p {
         font-size: 1.2em;
     }
